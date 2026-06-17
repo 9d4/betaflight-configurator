@@ -37,7 +37,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build app
-        run: yarn build
+        run: yarn build --base=/betaflight-configurator/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
